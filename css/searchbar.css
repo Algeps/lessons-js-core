@@ -1,0 +1,20 @@
+.searchbar {
+    position: relative;
+    width: 16rem;
+    padding: 0;
+}
+
+.searchbar__input {
+    padding-left: 2rem;
+    border: .0625px solid #459DF5;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+}
+
+.searchbar__icon {
+    position: absolute;
+    left: .5rem;
+    bottom: .5rem;
+    width: 1rem;
+    stroke: #459DF5;
+}
