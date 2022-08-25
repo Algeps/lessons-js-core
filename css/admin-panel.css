@@ -1,0 +1,138 @@
+body {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.page-header__text {
+    font-size: 1.625rem;
+    font-weight: 700;
+}
+
+.filter-row {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 2rem;
+    gap: 1rem;
+}
+
+.filter-row__main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.filter-row__group {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.filter-row__group_main {
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.filter-row__group_other {
+    position: relative;
+    display: flex;
+    gap: .25rem;
+    flex-wrap: wrap;
+}
+
+.searchbar_group_main {
+    width: 20rem;
+    flex-wrap: wrap;
+}
+
+.filter-row__other {
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: .5rem;
+    background-color: #EBF0F5;
+    flex-wrap: wrap;
+}
+
+.input_filter-row_data_registration {
+    width: 8.875rem;
+}
+
+.input_filter-row_order_status {
+    position: relative;
+    width: 12rem;
+}
+
+.input_filter-row_order_amount {
+    width: 7.875rem;
+}
+
+.dropdown-status {
+    position: absolute;
+    display: none;
+    top: 2.25rem;
+    right: 0;
+    z-index: -1;
+}
+
+.input__input-field_checked:focus ~ .dropdown-status, .dropdown-status:hover {
+    display: block;
+    z-index: 1;
+}
+
+.table {
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    empty-cells: show; 
+}
+
+.table__row_header {
+    width: 100%;
+    color: #fff;
+    background-color: #459DF5;
+}
+
+.table__body {
+    display: table-row-group;
+}
+
+.table__row {
+    display: table-row;
+    box-sizing: border-box;
+}
+
+.table__cell {
+    display: table-cell;
+    vertical-align: middle;
+    padding: .75rem .5rem .75rem .5rem;
+}
+
+.table__text {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: .05rem;
+    height: 100%;
+}
+
+.table__icon {
+    width: 1rem;
+    fill: #fff;
+    stroke: #fff;
+}
+
+.table__cell_header_checkbox {
+    width: fit-content;
+}

@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="performance">
     <div class="icons">
         <img src="icons/moon.svg" class="icon">
         <img src="icons/sun.svg" class="icon">
@@ -27,44 +27,36 @@
         <image src="icons/abort.svg" class="icon">
     </div>
     <div class="block-performance block-performance_primary">
-        <label class="input-container">
-            <div class="input-container__label">
-                Дата и время заказа
-            </div>
-            <div class="input-field input-container__input_primary">
-                <input type="text" class="input-field__input" placeholder="Введите">
-                <button class="button-icon input-field__button-icon_delete">
-                    <svg viewBox="0 0 16 16" class="button-icon__icon " xmlns="http://www.w3.org/2000/svg">
+        <label class="input input_style_primary block-performance__input-item">
+            <div class="input__label">Дата и время заказа</div>
+            <div class="input__area">
+                <input type="text" class="input__input-field" placeholder="Введите">
+                <button class="input__button-icon input__button-icon_position_end input__button-icon_target_delete">
+                    <svg viewBox="0 0 16 16" class="input__icon" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12.5 3.5L3.5 12.5M3.5 3.5L12.5 12.5" fill="none"/>
                     </svg>
                 </button>
             </div>
         </label>
-        <label class="input-container">
-            <div class="input-container__label">
-                Дата и время заказа
-            </div>
-            <div class="input-field input-container__input_incorrect">
-                <input type="text" class="input-field__input" placeholder="Введите" value="06.12.2021">
-                <button class="button-icon input-field__button-icon_delete">
-                    <svg viewBox="0 0 16 16" class="button-icon__icon " xmlns="http://www.w3.org/2000/svg">
+        <label class="input input_style_incorrect block-performance__input-item">
+            <div class="input__label">Дата и время заказа</div>
+            <div class="input__area">
+                <input type="text" class="input__input-field" placeholder="Введите" value="06.12.2021">
+                <button class="input__button-icon input__button-icon_position_end input__button-icon_target_delete">
+                    <svg viewBox="0 0 16 16" class="input__icon" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12.5 3.5L3.5 12.5M3.5 3.5L12.5 12.5" fill="none"/>
                     </svg>
                 </button>
             </div>
         </label>
-        <label class="input-container">
-            <div class="input-container__label">
-                Дата и время заказа
-            </div>
-            <div class="input-field input-container__input_disabled">
-                <input type="text" class="input-field__input" placeholder="Введите" value="06.12.2021" readonly>
-                <button class="button-icon input-field__button-icon_blocked">
-                    <svg viewBox="0 0 16 16" class="button-icon__icon" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C4 2.79086 5.79086 1 8 1C10.2091 1 12 2.79086 12 5V7C13.1046 7 14 7.89543 14 9V13C14 14.1046 13.1046 15 12 15H4C2.89543 15 2 14.1046 2 13V9C2 7.89543 2.89543 7 4 7V5ZM10 5V7H6V5C6 3.89543 6.89543 3 8 3C9.10457 3 10 3.89543 10 5Z" stroke="none"/>
-                        <path d="M12 5C12 2.8 10.2 1 8 1C5.8 1 4 2.8 4 5L4 9H6V5C6 3.75 7 3 8 3C9 3 10 3.75 10 5V9H12V5Z" stroke="none"/>
-                    </svg>
-                </button>
+        <label class="input input_style_disabled block-performance__input-item">
+            <div class="input__label">Дата и время заказа</div>
+            <div class="input__area">
+                <input type="text" class="input__input-field" placeholder="Введите" value="06.12.2021" readonly>
+                <svg viewBox="0 0 16 16" class="input__button-icon input__button-icon_position_end input__button-icon_target_blocked" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C4 2.79086 5.79086 1 8 1C10.2091 1 12 2.79086 12 5V7C13.1046 7 14 7.89543 14 9V13C14 14.1046 13.1046 15 12 15H4C2.89543 15 2 14.1046 2 13V9C2 7.89543 2.89543 7 4 7V5ZM10 5V7H6V5C6 3.89543 6.89543 3 8 3C9.10457 3 10 3.89543 10 5Z" stroke="none"/>
+                    <path d="M12 5C12 2.8 10.2 1 8 1C5.8 1 4 2.8 4 5L4 9H6V5C6 3.75 7 3 8 3C9 3 10 3.75 10 5V9H12V5Z" stroke="none"/>
+                </svg>
             </div>
         </label>
     </div>
@@ -88,30 +80,30 @@
     </div>
 
     <div class="block-performance block-performance_primary">
-        <label class="searchbar">
-            <div class="input-field searchbar__input-field">
-                <input type="text" class="input-field__input searchbar__input" placeholder="Номер заказа или ФИО">
-                <svg viewBox="0 0 16 16" class="searchbar__icon" stroke="#8055FF" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.0355 10.0355C11.9882 8.08291 11.9882 4.91709 10.0355 2.96447C8.08291 1.01184 4.91709 1.01184 2.96447 2.96447C1.01184 4.91709 1.01184 8.08291 2.96447 10.0355C4.91709 11.9882 8.08291 11.9882 10.0355 10.0355ZM10.0355 10.0355L14 14M14 14L14.5 13.5L11.5 10.5M14 14L13.5 14.5L10.5 11.5" fill="none"/>
-                </svg>
-                <button class="button-icon input-field__button-icon_delete">
-                    <svg viewBox="0 0 16 16" class="button-icon__icon " xmlns="http://www.w3.org/2000/svg">
+        <label class="input searchbar block-performance__input-item">
+            <div class="input__area">
+                <input type="text" class="input__input-field" placeholder="Номер заказа или ФИО">
+                <button class="input__button-icon input__button-icon_position_end input__button-icon_target_delete">
+                    <svg viewBox="0 0 16 16" class="input__icon" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12.5 3.5L3.5 12.5M3.5 3.5L12.5 12.5" fill="none"/>
                     </svg>
                 </button>
+                <svg viewBox="0 0 16 16" class="input__button-icon input__button-icon_position_beginning searchbar__searchbar-icon" stroke="#8055FF" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.0355 10.0355C11.9882 8.08291 11.9882 4.91709 10.0355 2.96447C8.08291 1.01184 4.91709 1.01184 2.96447 2.96447C1.01184 4.91709 1.01184 8.08291 2.96447 10.0355C4.91709 11.9882 8.08291 11.9882 10.0355 10.0355ZM10.0355 10.0355L14 14M14 14L14.5 13.5L11.5 10.5M14 14L13.5 14.5L10.5 11.5" fill="none"/>
+                </svg>
             </div>
         </label>
-        <label class="searchbar">
-            <div class="input-field searchbar__input-field">
-                <input type="text" class="input-field__input searchbar__input" placeholder="Номер заказа или ФИО" value="50744">
-                <svg viewBox="0 0 16 16" class="searchbar__icon" stroke="#8055FF" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.0355 10.0355C11.9882 8.08291 11.9882 4.91709 10.0355 2.96447C8.08291 1.01184 4.91709 1.01184 2.96447 2.96447C1.01184 4.91709 1.01184 8.08291 2.96447 10.0355C4.91709 11.9882 8.08291 11.9882 10.0355 10.0355ZM10.0355 10.0355L14 14M14 14L14.5 13.5L11.5 10.5M14 14L13.5 14.5L10.5 11.5" fill="none"/>
-                </svg>
-                <button class="button-icon input-field__button-icon_delete">
-                    <svg viewBox="0 0 16 16" class="button-icon__icon" xmlns="http://www.w3.org/2000/svg">
+        <label class="input searchbar block-performance__input-item">
+            <div class="input__area">
+                <input type="text" class="input__input-field" placeholder="Номер заказа или ФИО" value="50744">
+                <button class="input__button-icon input__button-icon_position_end input__button-icon_target_delete">
+                    <svg viewBox="0 0 16 16" class="input__icon" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12.5 3.5L3.5 12.5M3.5 3.5L12.5 12.5" fill="none"/>
                     </svg>
                 </button>
+                <svg viewBox="0 0 16 16" class="input__button-icon input__button-icon_position_beginning searchbar__searchbar-icon" stroke="#8055FF" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.0355 10.0355C11.9882 8.08291 11.9882 4.91709 10.0355 2.96447C8.08291 1.01184 4.91709 1.01184 2.96447 2.96447C1.01184 4.91709 1.01184 8.08291 2.96447 10.0355C4.91709 11.9882 8.08291 11.9882 10.0355 10.0355ZM10.0355 10.0355L14 14M14 14L14.5 13.5L11.5 10.5M14 14L13.5 14.5L10.5 11.5" fill="none"/>
+                </svg>
             </div>
         </label>
     </div>
@@ -137,7 +129,7 @@
             <button type="button" class="button button_size_big button_color_blue">
                 <span class="button__text">Text here</span>
             </button>
-            <button type="button" class="button button_size_big button_color_blue button_without_text">
+            <button type="button" class="button button_size_big button_color_blue button_icon_only">
                 <svg viewBox="0 0 16 16" class="button__icon" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6 14.5H15" fill="none"/>
                     <path d="M5 13L1.5 14.5L3 11M5 13L3 11M5 13L12 6M3 11L10 4M11 3L12.5 1.5L14.5 3.5L13 5M11 3L13 5M11 3L10 4M13 5L12 6M12 6L10 4" fill="none"/>
@@ -156,7 +148,7 @@
             <button type="button" class="button button_size_big button_color_clear-blue">
                 <span class="button__text">Text here</span>
             </button>
-            <button type="button" class="button button_size_big button_color_clear-blue button_without_text">
+            <button type="button" class="button button_size_big button_color_clear-blue button_icon_only">
                 <svg viewBox="0 0 16 16" class="button__icon" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6 14.5H15" fill="none"/>
                     <path d="M5 13L1.5 14.5L3 11M5 13L3 11M5 13L12 6M3 11L10 4M11 3L12.5 1.5L14.5 3.5L13 5M11 3L13 5M11 3L10 4M13 5L12 6M12 6L10 4" fill="none"/>
@@ -175,7 +167,7 @@
             <button type="button" class="button button_size_big button_color_clear-black">
                 <span class="button__text">Text here</span>
             </button>
-            <button type="button" class="button button_size_big button_color_clear-black button_without_text">
+            <button type="button" class="button button_size_big button_color_clear-black button_icon_only">
                 <svg viewBox="0 0 16 16" class="button__icon" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6 14.5H15" fill="none"/>
                     <path d="M5 13L1.5 14.5L3 11M5 13L3 11M5 13L12 6M3 11L10 4M11 3L12.5 1.5L14.5 3.5L13 5M11 3L13 5M11 3L10 4M13 5L12 6M12 6L10 4" fill="none"/>
@@ -194,7 +186,7 @@
             <button type="button" class="button button_color_blue button_size_slim ">
                 <span class="button__text">Text here</span>
             </button>
-            <button type="button" class="button button_color_blue button_without_text button_size_slim">
+            <button type="button" class="button button_color_blue button_icon_only button_size_slim">
                 <svg viewBox="0 0 16 16" class="button__icon" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6 14.5H15" fill="none"/>
                     <path d="M5 13L1.5 14.5L3 11M5 13L3 11M5 13L12 6M3 11L10 4M11 3L12.5 1.5L14.5 3.5L13 5M11 3L13 5M11 3L10 4M13 5L12 6M12 6L10 4" fill="none"/>
@@ -213,7 +205,7 @@
             <button type="button" class="button button_color_clear-blue button_size_slim ">
                 <span class="button__text">Text here</span>
             </button>
-            <button type="button" class="button button_color_clear-blue button_without_text button_size_slim">
+            <button type="button" class="button button_color_clear-blue button_icon_only button_size_slim">
                 <svg viewBox="0 0 16 16" class="button__icon" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6 14.5H15" fill="none"/>
                     <path d="M5 13L1.5 14.5L3 11M5 13L3 11M5 13L12 6M3 11L10 4M11 3L12.5 1.5L14.5 3.5L13 5M11 3L13 5M11 3L10 4M13 5L12 6M12 6L10 4" fill="none"/>
@@ -308,15 +300,13 @@
         </div>
 
         <div class="table-actions table-actions_input">
-            <label class="input-container">
-                <div class="input-container__label">
-                    Номер страницы
-                </div>
-                <div class="input-field input-container__input_primary">
-                    <input type="text" class="input-field__input" placeholder="Введите номер">
-                    <button class="button-icon input-field__button-icon_delete">
-                        <svg viewBox="0 0 16 16" class="button-icon__icon " xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.5 3.5L3.5 12.5M3.5 3.5L12.5 12.5" fill="none"/>
+            <label class="input input_style_primary">
+                <div class="input__label">Номер страницы</div>
+                <div class="input__area">
+                    <input type="text" class="input__input-field" placeholder="Введите">
+                    <button class="input__button-icon input__button-icon_position_end input__button-icon_target_delete">
+                        <svg viewBox="0 0 16 16" class="input__icon" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.5 3.5L3.5 12.5M3.5 3.5L12.5 12.5" fill="none"></path>
                         </svg>
                     </button>
                 </div>

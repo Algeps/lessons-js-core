@@ -46,7 +46,7 @@
     width: 100%;
 }
 
-.button_size_slim.button_without_text {
+.button_size_slim.button_icon_only {
     padding: .25rem;
 }
 
@@ -54,7 +54,7 @@
     height: 1rem;
 }
 
-.button_without_text {
+.button_icon_only {
     padding: .5rem;
 }
 

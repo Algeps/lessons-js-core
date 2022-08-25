@@ -13,23 +13,29 @@
 
 *{
     font-family: 'Ubuntu', sans-serif;
-    font-size: .8125rem;
     font-weight: 400;
 }
 
 body {
-    background: #E5E5E5;
+    font-size: .8125rem;
 }
 
 .icon {
     height: 1rem;
 }
+/*uikit*/
+.performance {
+    background: #E5E5E5;
+}
 
-/**/
 .block-performance {
     display: flex;
     border: .0625rem dashed #8055FF;
     width: fit-content;
+}
+
+.block-performance__input-item {
+    width: 16rem;
 }
 
 .block-performance_primary {
