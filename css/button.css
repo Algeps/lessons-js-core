@@ -1,4 +1,5 @@
 .button {
+    appearance: none;
     height: 2rem;
     display: flex;
     width: fit-content;
@@ -21,6 +22,13 @@
 
 .button_color_blue {
     background-color: #459DF5;
+    color: #fff;
+    stroke: #fff;
+    fill: #fff;
+}
+
+.button_color_red {
+    background-color: red;
     color: #fff;
     stroke: #fff;
     fill: #fff;

@@ -1,6 +1,7 @@
 body {
     padding-left: 3rem;
     padding-right: 3rem;
+    margin: 0;
 }
 
 .page-header {
@@ -88,36 +89,88 @@ body {
 
 .input__input-field_checked:focus ~ .dropdown-status, .dropdown-status:hover {
     display: block;
-    z-index: 1;
+    z-index: 2;
 }
 
 .table {
     display: table;
     width: 100%;
+    height: 100%;
     box-sizing: border-box;
+    empty-cells: show;
+    overflow-y: scroll;
     border-collapse: collapse;
-    empty-cells: show; 
+}
+
+.table__column-group {
+    display: table-column-group;
+}
+
+.table__column {
+    display: table-column;
+}
+
+.table__column_column_checkbox {
+    width: 3%;
+}
+
+.table__column_column_id {
+    width: 7%;
+}
+
+.table__column_column_date {
+    width: 12%;
+}
+
+.table__column_column_status {
+    width: 12%;
+}
+
+.table__column_column_number {
+    width: 7.5%;
+}
+
+.table__column_column_sum {
+    width: 8.5%;
+}
+
+.table__column_column_full-name {
+    width: 100%;
 }
 
 .table__row_header {
+    position: sticky;
+    top: 0;
     width: 100%;
+    z-index: 1;
     color: #fff;
     background-color: #459DF5;
 }
 
 .table__body {
     display: table-row-group;
+    height: 100%;
+    margin-top: 0;
+    overflow: hidden;
+    overflow-x: auto;
 }
 
 .table__row {
     display: table-row;
-    box-sizing: border-box;
 }
 
 .table__cell {
     display: table-cell;
     vertical-align: middle;
     padding: .75rem .5rem .75rem .5rem;
+}
+
+.table__cell:first-child {
+    padding-left: 1rem;
+}
+
+.table__cell:last-child {
+    padding-right: 1rem;
 }
 
 .table__text {
@@ -133,6 +186,50 @@ body {
     stroke: #fff;
 }
 
-.table__cell_header_checkbox {
+.footer {
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #EBF0F5;
+    padding: .5rem 1rem .5rem 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer__group {
+    appearance: none;   
+    position: relative;
+    display: flex;
     width: fit-content;
+    margin: 0;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer__number-page {
+    display: flex;
+    gap: .25rem;
+}
+
+.footer__select-row {
+    color: #459DF5;
+}
+
+.delete-container {
+    position: relative;
+}
+
+.table-actions_choice_delete {
+    position: absolute;
+    display: none;
+    left: 0;
+    bottom: 1.75rem;
+    z-index: 2;
+}
+
+.button_delete_row:focus ~ .table-actions_choice_delete, .table-actions_choice_delete:hover {
+    display: flex;
+    z-index: 1;
 }
