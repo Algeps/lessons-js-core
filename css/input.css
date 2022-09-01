@@ -25,21 +25,22 @@
     padding: .25rem 1.55rem .25rem .5rem;
     border: 1px solid;
     border-radius: 0.25rem;
-    background-color: #FFFFFF;
     box-sizing: border-box;
 }
 
 .input_style_primary .input__input-field {
-    border-color: #459DF5;
+    border-color: var(--color-blue);
+    background-color: var(--color-white);
 }
 
 .input_style_incorrect .input__input-field {
-    border-color: #F53152;
+    border-color: var(--color-red);
+    background-color: var(--color-white);
 }
 
 .input_style_disabled .input__input-field {
-    border-color: #459DF5;
-    background: #BAD8F5;
+    border-color: var(--color-blue);
+    background: var(--color-day-light-blue);
 }
 
 .input__input-field:focus {
@@ -57,7 +58,7 @@
 }
 
 .input__input-field::placeholder {
-    color: #BAD8F5;
+    color: var(--color-day-light-blue);
 }
 
 .input__button-icon {
@@ -85,23 +86,23 @@
 }
 
 .input__button-icon_target_delete .input__icon{
-    stroke: #BAD8F5;
-    fill: #BAD8F5;
+    stroke: var(--color-day-light-blue);
+    fill: var(--color-day-light-blue);
 }
 
 .input__button-icon_target_button {
     padding: 0;
     width: 1rem;
-    stroke: #BAD8F5;
-    fill: #BAD8F5;
+    stroke: var(--color-day-light-blue);
+    fill: var(--color-day-light-blue);
     cursor: pointer;
 }
 
 .input__button-icon_target_blocked {
     height: 1rem;
     width: 1rem;
-    fill: #000;
-    stroke:#000;
+    fill: var(--color-black);
+    stroke:var(--color-black);
     cursor: not-allowed;
 }
 

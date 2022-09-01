@@ -8,8 +8,8 @@
     appearance: none;
     width: 1rem;
     height: 1rem;
-    background-color: #fff;
-    border: .0625rem solid #BAD8F5;
+    background-color: var(--color-white);
+    border: .0625rem solid var(--color-day-light-blue);
     border-radius: .125rem;
     box-sizing: border-box;
     margin: 0;
@@ -17,8 +17,8 @@
 }
 
 .checkbox__input:checked {
-    background-color: #459DF5;
-    border-color: #459DF5;
+    background-color: var(--color-blue);
+    border-color: var(--color-blue);
 }
 
 .checkbox__icon {
@@ -35,5 +35,5 @@
 }
 
 .checkbox__input:checked ~ .checkbox__label{
-    color: #459DF5;
+    color: var(--color-blue);
 }

@@ -1,6 +1,6 @@
 .searchbar .input__input-field {
     padding-left: 2rem;
-    border-color: #459DF5;
+    border-color: var(--color-blue);
 }
 
 .searchbar__searchbar-icon {
@@ -9,7 +9,7 @@
     width: 1rem;
     height: 1rem;
     padding: 0;
-    stroke: #459DF5;
+    stroke: var(--color-blue);
 }
 
 .searchbar__searchbar-text {

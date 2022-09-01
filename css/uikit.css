@@ -5,10 +5,14 @@
 @import url(radio.css);
 @import url(dropdown.css);
 
+
 :root{
-    --background-color-white: #fff;
-    --background-color-day-light-blue: #BAD8F5;
-    --background-color-blue: #459DF5;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-day-light-blue: #BAD8F5;
+    --color-blue: #459DF5;
+    --color-red: #F53152;
+    --color-light-grey: #EBF0F5;
 }
 
 *{

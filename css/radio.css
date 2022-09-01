@@ -2,8 +2,8 @@
     appearance: none;
     width: 1rem;
     height: 1rem;
-    background-color: #fff;
-    border: .0625rem solid #BAD8F5;
+    background-color: var(--color-white);
+    border: .0625rem solid var(--color-day-light-blue);
     border-radius: 1rem;
     box-sizing: border-box;
     margin: 0;
@@ -11,11 +11,11 @@
 }
 
 .radio__input:checked {
-    border: .25rem solid #459DF5;
+    border: .25rem solid var(--color-blue);
 }
 
 .radio__input:checked + .radio__label {
-    color: #459DF5;
+    color: var(--color-blue);
 }
 
 .radio__input_display_none {
