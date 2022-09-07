@@ -9,6 +9,10 @@
     outline: 0;
 }
 
+.button:hover {
+    background-color: var(--color-hover);
+}
+
 .button_size_big {
     padding: .5rem 1rem .5rem 1rem;
     gap: .5rem;
@@ -70,4 +74,17 @@
     height: 1rem;
     fill: inherit;
     stroke: inherit;
+}
+
+.button_active_load:hover .button__icon {
+    animation: button__icon_rotate linear 1s infinite;
+}
+
+@keyframes button__icon_rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

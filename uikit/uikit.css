@@ -15,6 +15,15 @@
     --color-light-grey: #EBF0F5;
     --color-scrollbar-track: rgba(0, 0, 0, 0.1);
     --color-scrollbar-thumb:  rgba(0, 0, 0, 0.34);
+    --color-hover: rgba(0, 0, 0, 0.15);
+    --color-green: #0FB864;
+
+    --color-status-icon-new: #FF8C56;
+    --color-status-icon-calculation: #459DF5;
+    --color-status-access: #0FB864;
+    --color-status-icon-postpone: #FF8C56;
+    --color-status-icon-done: #0FB864;
+    --color-status-icon-cancel: #000000;
 }
 
 *{
