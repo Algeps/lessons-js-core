@@ -1,21 +1,22 @@
 * {
-    scrollbar-width: thin;
-    scrollbar-color: var(--color-scrollbar-thumb) var(--color-scrollbar-track);
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-scrollbar-thumb) var(--color-scrollbar-track);
 }
 
 *::-webkit-scrollbar {
-    width: .75rem;
+  width: 0.75rem;
 }
 
 *::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 .5rem .5rem var(--color-scrollbar-track);
+  box-shadow: inset 0 0 0.5rem 0.5rem var(--color-scrollbar-track);
 }
 
 *::-webkit-scrollbar-thumb {
-    box-shadow: inset 0 0 .5rem .5rem var(--color-scrollbar-thumb);
+  box-shadow: inset 0 0 0.5rem 0.5rem var(--color-scrollbar-thumb);
 }
 
-*::-webkit-scrollbar-track, *::-webkit-scrollbar-thumb {
-    border-radius: .5rem;
-    border: solid .25rem transparent;
+*::-webkit-scrollbar-track,
+*::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  border: solid 0.25rem transparent;
 }

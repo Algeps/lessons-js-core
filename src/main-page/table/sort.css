@@ -1,15 +1,16 @@
 .sort {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.sort_order, .sort:hover {
-    background-color: var(--color-hover);
+.sort_order,
+.sort:hover {
+  background-color: var(--color-hover);
 }
 
 .sort_order_reverse {
-    background-color: var(--color-hover);
+  background-color: var(--color-hover);
 }
 
 .sort_order_reverse .table__header-icon {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }

@@ -1,57 +1,62 @@
 .table__footer {
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--color-light-grey);
-    padding: .5rem 1rem .5rem 1rem;
-    flex-wrap: wrap;
-    gap: 1rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-light-grey);
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .table__footer-group {
-    display: flex;
-    width: fit-content;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  width: fit-content;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
 }
 
 .table__footer-number-page {
-    display: flex;
-    gap: .25rem;
+  display: flex;
+  gap: 0.25rem;
 }
 
 .table__footer-select-row {
-    color: var(--color-blue);
+  color: var(--color-blue);
 }
 
-.delete-row-container, .input-number-page-container, .change-theme-container {
-    position: relative;
+.delete-row-container,
+.input-number-page-container,
+.change-theme-container {
+  position: relative;
 }
 
 .table-actions_choice_delete {
-    position: absolute;
-    display: none;
-    left: 0;
-    bottom: 1.75rem;
+  position: absolute;
+  display: none;
+  left: 0;
+  bottom: 1.75rem;
 }
 
 .table-actions_number_page {
-    position: absolute;
-    display: none;
-    right: 0;
-    bottom: 1.75rem;
+  position: absolute;
+  display: none;
+  right: 0;
+  bottom: 1.75rem;
 }
 
 .table-actions_choice_theme {
-    position: absolute;
-    display: none;
-    right: 0;
-    top: 2.25rem;
+  position: absolute;
+  display: none;
+  right: 0;
+  top: 2.25rem;
 }
 
-.button_delete_row:focus ~ .table-actions_choice_delete, .table-actions_choice_delete:hover,
-.button_input_number_page:focus ~ .table-actions_number_page, .table-actions_number_page:hover, 
-.button_change_theme:focus ~ .table-actions_choice_theme, .table-actions_choice_theme:hover {
-    display: flex;
-    z-index: 1;
+.button_delete_row:focus ~ .table-actions_choice_delete,
+.table-actions_choice_delete:hover,
+.button_input_number_page:focus ~ .table-actions_number_page,
+.table-actions_number_page:hover,
+.button_change_theme:focus ~ .table-actions_choice_theme,
+.table-actions_choice_theme:hover {
+  display: flex;
+  z-index: 1;
 }
